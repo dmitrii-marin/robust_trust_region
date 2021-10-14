@@ -87,3 +87,7 @@ The script is controlled by the following environmental variables:
 | 30%-length scribbles **(default)**| 0.3           | 0.95160 | 0.1   |
 | clicks (0%-length scribbles)      | 0             | 0.95220 | 0.1   |
 
+For example, the following will train a model using fulllength scribbles:
+```shell
+suffix= ERROR_PROB=0.94400 TR_WEIGHT=0.05 bash full_tr_error_const.sh
+```
