@@ -55,13 +55,14 @@ python setup.py install
 
 All TR models require pretraining with partial cross-entropy. The models can be downloaded using the links:
 
-| Level of supervision | Description | Link |
-|--|--|--|
-| original (full-length scribbles) | mobilenet-v2 + deeplab-v3+ | [45MB](https://drive.google.com/uc?export=download&id=1tO87A-zkImnYmdBppd7Kp-36-EGErJMH) |
-| 80%-length scribbles             | mobilenet-v2 + deeplab-v3+ | [45MB](https://drive.google.com/uc?export=download&id=10cjJZrwRl5CL1INsAg5pV_aQgAJEk_6F) |
-| 50%-length scribbles             | mobilenet-v2 + deeplab-v3+ | [45MB](https://drive.google.com/uc?export=download&id=1pjRYi37oJFYUdPAcopyGvad8exY2zvTn) |
-| 30%-length scribbles             | mobilenet-v2 + deeplab-v3+ | [45MB](https://drive.google.com/uc?export=download&id=1HcodeB41ETlhwcv2hVXHCEE3zUXZmD5U) |
-| clicks (0%-length scribbles)     | mobilenet-v2 + deeplab-v3+ | [45MB](https://drive.google.com/uc?export=download&id=1kgLlgW-Nwb1cq8dDf-zLe5e8CeV0gllt) |
+| Level of supervision | % of image pixels labeled |Description | Link |
+|--|--|--|--|
+| full supervision | ~100% | mobilenet-v2 + deeplab-v3+ | [45MB](https://cs.uwaterloo.ca/~d2marin/models/highorder_backprop_iccv21/mn_checkpoint_full_epoch_60.pth.tar)|
+| original (full-length scribbles) | ~3% | mobilenet-v2 + deeplab-v3+ | [45MB](https://cs.uwaterloo.ca/~d2marin/models/highorder_backprop_iccv21/mn_checkpoint_epoch_60.pth.tar) |
+| 80%-length scribbles             | | mobilenet-v2 + deeplab-v3+ | [45MB](https://cs.uwaterloo.ca/~d2marin/models/highorder_backprop_iccv21/mn_checkpoint0.8_epoch_60.pth.tar) |
+| 50%-length scribbles             | | mobilenet-v2 + deeplab-v3+ | [45MB](https://cs.uwaterloo.ca/~d2marin/models/highorder_backprop_iccv21/mn_checkpoint0.5_epoch_60.pth.tar) |
+| 30%-length scribbles             | ~1% | mobilenet-v2 + deeplab-v3+ | [45MB](https://cs.uwaterloo.ca/~d2marin/models/highorder_backprop_iccv21/mn_checkpoint0.3_epoch_60.pth.tar) |
+| clicks (0%-length scribbles)     | | mobilenet-v2 + deeplab-v3+ | [45MB](https://cs.uwaterloo.ca/~d2marin/models/highorder_backprop_iccv21/mn_checkpoint0_epoch_60.pth.tar) |
 
 ## Training with Robust Trust Region
 
